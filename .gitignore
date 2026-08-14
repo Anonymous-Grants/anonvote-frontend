@@ -1,0 +1,14 @@
+/node_modules
+/.next/
+/out/
+.env
+.env.local
+*.log
+.DS_Store
+*.tsbuildinfo
+
+# Noir / nargo (circuits/hash1, circuits/hash2 -- prebuilt artifacts are
+# checked in under lib/circuits/*.json so the app doesn't need nargo to
+# build; these are only regenerated if the circuits change)
+circuits/**/target
+circuits/**/Prover.toml
